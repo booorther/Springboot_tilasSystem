@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/day06_6_17_test/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/day06_6_17/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day04_springboot" />
+        <module name="fullStackTraining" />
+        <module name="brandManager" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="carefree-health" target="1.8" />
+      <module name="day04_maven_test" target="1.8" />
+      <module name="day09_springboot_mybatic" target="1.5" />
+      <module name="spring_mybatis" target="1.5" />
+      <module name="tlias302" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="brandManager" options="-parameters" />
+      <module name="day04_springboot" options="-parameters" />
+      <module name="day09_springboot_mybatic" options="" />
+      <module name="fullStackTraining" options="-parameters" />
+      <module name="spring_mybatis" options="" />
+      <module name="tlias302" options="" />
+    </option>
+  </component>
+</project>

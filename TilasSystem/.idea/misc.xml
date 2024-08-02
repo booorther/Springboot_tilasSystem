@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/day04_maven/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_maven1/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_test/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/day05_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/day06_6_17/pom.xml" />
+        <option value="$PROJECT_DIR$/day06_6_17_test/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/Test_1115/pom.xml" />
+        <option value="$PROJECT_DIR$/Test_1116/pom.xml" />
+        <option value="$PROJECT_DIR$/day_test/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled_0618_0008/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/day09_springboot_mybatic/pom.xml" />
+        <option value="$PROJECT_DIR$/brandManager/pom.xml" />
+        <option value="$PROJECT_DIR$/tlias302/pom.xml" />
+        <option value="$PROJECT_DIR$/carefree-health/pom.xml" />
+        <option value="$PROJECT_DIR$/fullStackTraining/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Test_1115/pom.xml" />
+        <option value="$PROJECT_DIR$/Test_1116/pom.xml" />
+        <option value="$PROJECT_DIR$/carefree-health/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_maven/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_maven1/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_test/pom.xml" />
+        <option value="$PROJECT_DIR$/day05_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/day06_6_17/pom.xml" />
+        <option value="$PROJECT_DIR$/day06_6_17_test/pom.xml" />
+        <option value="$PROJECT_DIR$/day09_springboot_mybatic/pom.xml" />
+        <option value="$PROJECT_DIR$/day_test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/tlias302/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

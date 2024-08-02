@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--员工接口Mapper权限命名-->
+<mapper namespace="com.itheima.mapper.EmpMapper">
+
+<!--    有条件（根据where标签）的分页查询，无条件则全部查询-->
+    <select id="page"  resultType="com.itheima.pojo.Emp">
+        select * from emp
+        <where>
+            <if test="name!=null and name!='' ">
+                 name like concat('%',#{name} ,'%')
+            </if>
+            <if test="gender!=null ">
+                and gender =#{gender}
+            </if>
+            <if test="begin!=null and end!=null ">
+                and entrydate between #{begin} and #{end}
+            </if>
+        </where>
+<!--        更新时间降序-->
+        order by update_time desc
+<!--        分页-->
+<!--        limit #{startPage},#{pageSize}-->
+    </select>
+
+
+<!--&lt;!&ndash;条件统计查询&ndash;&gt;-->
+<!--    <select id="count"  resultType="java.lang.Long">-->
+<!--        select count(*) from emp-->
+<!--&lt;!&ndash;        <where></where>标签，去除条件语句的and连接词&ndash;&gt;-->
+<!--        <where>-->
+<!--            <if test="name!=null and name!='' ">-->
+<!--                 name like concat('%',#{name} ,'%')-->
+<!--            </if>-->
+<!--            <if test="gender!=null ">-->
+<!--                and gender =#{gender}-->
+<!--            </if>-->
+<!--            <if test="begin!=null and end!=null ">-->
+<!--                and entrydate between #{begin} and #{end}-->
+<!--            </if>-->
+<!--        </where>-->
+<!--    </select>-->
+    <delete id="deleteEmpByIdMapper" >
+        delete from emp where id in
+<!--        自动拼接逗号-->
+<!--        collection="ids"：deleteEmpByIdMapper的遍历变量名
+            item="id"：循环变量
+            open="(" :在遍历前拼接（
+            close=")":在遍历后拼接）
+            separator=",":每次循环都拼接一个逗号，最后一次循环除外
+            #{id}：循环变量值
+            -->
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
+<!--        @Update(" update dept set name=#{name},update_time=#{updateTime} where id=#{id}")
+    void updateDept(Dept dept);-->
+    <update id="updateEmpService" >
+        update emp
+        <set>
+            <if test="username!=null and username!='' " >
+                username=#{username},
+            </if>
+            <if test="password!=null and password!='' " >
+                password=#{password},
+            </if>
+            <if test="name!=null and name!='' " >
+                name=#{name},
+            </if>
+            <if test="gender!=null " >
+                gender=#{gender},
+            </if>
+            <if test="image!=null and image!='' " >
+                image=#{image},
+            </if>
+            <if test="job!=null  " >
+                job=#{job},
+            </if> <if test="entrydate!=null" >
+            entrydate=#{entrydate},
+            </if>
+            <if test="deptId!=null " >
+            dept_id=#{deptId},
+            </if>
+            <if test="createTime!=null" >
+                create_time=#{createTime},
+            </if>
+            <if test="updateTime!=null" >
+                update_time=#{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+</mapper>
